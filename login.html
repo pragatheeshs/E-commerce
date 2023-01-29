@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <metabcharset="UTF-8">
+    <title>all products-INAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div class="container">
+        <div class="navbar">
+         <div class="logo">
+          <img src="images/logo.png" width="125px">
+         </div>
+         <nav>
+           <ul id="menuitems">
+               <li><a href="index.html">home</a> </li>
+               <li><a href="production.html">product</a> </li>
+               <li><a href="">about</a> </li>
+               <li><a href="">contact</a> </li>
+               <li><a href="login.html">account</a> </li>
+           </ul>
+         </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    
+<!-------account page------>
+    
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">login</span>
+                            <span onclick="register()">register</span>
+                            <hr id="indicator">
+                        </div>
+                        
+                        <form id="loginform">
+                            <input type="text" placeholder="username">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">login</button>
+                            <a href="">forget password</a>
+                        </form>
+                        
+                        <form id="regform">
+                            <input type="text" placeholder="username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  <!-------footer------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>download our app</h3>
+                    <p>Download app for android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful links</h3>
+                    <ui>
+                        <li>coupons</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>join affiliate</li>
+                    </ui>
+                </div>
+                <div class="row">
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ui>
+                        <li>facebook</li>
+                        <li>twitter</li>
+                        <li>instagram</li>
+                        <li>youtube</li>
+                    </ui>
+                </div>
+            </div>
+                <hr>
+                <p class="copyright">copyright 2021 - INAR</p>
+        </div>
+    </div>
+ <!-------js for toggle menu------>  
+    <script>
+        var menuitems=document.getElementById("menuitems");
+        
+        menuitems.style.maxHeight="0px";
+        
+        function menutoggle(){
+            if(menuitems.style.maxHeight="0px")
+                {
+                    menuitems.style.maxHeight="200px";
+                }
+            else
+                {
+                    menuitems.style.maxHeight="0px";
+                }
+        }
+    </script>  
+        
+ <!-------js for toggle menu------>
+        
+        <script>
+            
+            var loginform=document.getElementById("loginform");
+            var regform=document.getElementById("regform");
+            var indicator=document.getElementById("indicator");
+            
+               function register(){
+                   
+                   regform.style.transform="translateX(0px)";
+                   loginform.style.transform="translateX(0px)";
+                   indicator.style.transform="translateX(100px)";
+               }
+             function login(){
+                   
+                   regform.style.transform="translateX(300px)";
+                   loginform.style.transform="translateX(300px)";
+                   indicator.style.transform="translateX(0px)";
+               }
+            
+        </script>
+        
+        
+        
+</body>
+</html>

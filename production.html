@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <metabcharset="UTF-8">
+    <title>all products-INAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div class="container">
+        <div class="navbar">
+         <div class="logo">
+          <img src="images/logo.png" width="125px">
+         </div>
+         <nav>
+           <ul id="menuitems">
+               <li><a href="index.html">home</a> </li>
+               <li><a href="production.html">product</a> </li>
+               <li><a href="">about</a> </li>
+               <li><a href="">contact</a> </li>
+               <li><a href="login.html">account</a> </li>
+           </ul>
+         </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+    </div>
+    <div class="small-container">
+        <div class="row,row-2">
+            <h2>all products</h2>
+            <select>
+                <option>default shorting</option>
+                <option>short by price</option>
+                <option>short by popularity</option>
+                <option>short by sale</option>
+            </select>
+        </div>
+        
+        
+        <div class="row">
+             <div class="col-4">
+                 <a href="product%20details.html"><img src="images/product-1.jpg"></a>
+                 <a href="product%20details.html"><h4>red printed T-shirt</h4></a>
+                 <p>Rs.250.00</p>      
+            </div>
+             <div class="col-4">
+                 <img src="images/product-2.jpg">
+                 <h4>black shoes</h4>
+                 <p>Rs.850.00</p> 
+            </div>
+             <div class="col-4">
+                 <img src="images/product-3.jpg">
+                 <h4>black tracks</h4>
+                 <p>Rs.250.00</p> 
+            </div>
+             <div class="col-4">
+                  <img src="images/product-4.jpg">
+                 <h4>blue T-shirt</h4>
+                 <p>Rs.Rs.500.00</p>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-4">
+                 <img src="images/product-5.jpg">
+                 <h4>white leather shoes</h4>
+                 <p>Rs.750.00</p>      
+            </div>
+             <div class="col-4">
+                 <img src="images/product-6.jpg">
+                 <h4>black printed T-shirt</h4>
+                 <p>Rs.Rs.250.00</p> 
+            </div>
+             <div class="col-4">
+                 <img src="images/product-7.jpg">
+                 <h4>two pair of socks</h4>
+                 <p>Rs.Rs.100</p> 
+            </div>
+             <div class="col-4">
+                  <img src="images/product-8.jpg">
+                 <h4>black metal watch</h4>
+                 <p>Rs.5,000.00</p>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-4">
+                 <img src="images/product-9.jpg">
+                 <h4>fancy watch</h4>
+                 <p>Rs.50.00</p>      
+            </div>
+             <div class="col-4">
+                 <img src="images/product-10.jpg">
+                 <h4>black shoes</h4>
+                 <p>Rs.950.00</p> 
+            </div>
+             <div class="col-4">
+                 <img src="images/product-11.jpg">
+                 <h4>crocs</h4>
+                 <p>Rs.750.00</p> 
+            </div>
+             <div class="col-4">
+                  <img src="images/product-12.jpg">
+                 <h4>track pants</h4>
+                 <p>Rs.250.00</p>
+            </div>
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594</span>
+        </div>
+        
+        
+        
+    </div>
+  <!-------footer------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>download our app</h3>
+                    <p>Download app for android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful links</h3>
+                    <ui>
+                        <li>coupons</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>join affiliate</li>
+                    </ui>
+                </div>
+                <div class="row">
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ui>
+                        <li>facebook</li>
+                        <li>twitter</li>
+                        <li>instagram</li>
+                        <li>youtube</li>
+                    </ui>
+                </div>
+            </div>
+                <hr>
+                <p class="copyright">copyright 2021 - INAR</p>
+        </div>
+    </div>
+ <!-------js for toggle menu------>  
+    <script>
+        var menuitems=document.getElementById("menuitems");
+        
+        menuitems.style.maxHeight="0px";
+        
+        function menutoggle(){
+            if(menuitems.style.maxHeight="0px")
+                {
+                    menuitems.style.maxHeight="200px";
+                }
+            else
+                {
+                    menuitems.style.maxHeight="0px";
+                }
+        }
+    </script>   
+        
+        
+</body>
+</html>
